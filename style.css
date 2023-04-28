@@ -90,6 +90,7 @@ a:hover {
 
 .card-title {
     text-align: center;
+    font-size: 16pt;
 }
 
 [class*="col-"] {
