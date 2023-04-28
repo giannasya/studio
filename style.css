@@ -72,6 +72,13 @@ a:hover {
 }
 
 
+/* footer */
+
+.footer {
+    text-align: center;
+}
+
+
 /* carding  */
 
 .card {
@@ -110,9 +117,12 @@ a:hover {
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
     .card-title {
         font-size: 10pt;
+    }
+    .col-m-3 {
+        width: 50%;
     }
 }
 
