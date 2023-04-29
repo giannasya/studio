@@ -46,7 +46,7 @@ a:hover {
     padding-left: 5%;
     padding-right: 5%;
     background-color: white;
-    padding-top: 2%;
+    padding-top: 6%;
 }
 
 .carousel-item {
@@ -69,6 +69,18 @@ a:hover {
 
 .carousel-caption p {
     color: #fff;
+}
+
+@media only screen and (max-width:1000px) {
+    .MyCarousel {
+        padding-top: 10%;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .MyCarousel {
+        padding-top: 20%;
+    }
 }
 
 
@@ -123,6 +135,9 @@ a:hover {
     }
     .col-m-3 {
         width: 50%;
+    }
+    .MyCarousel {
+        padding-top: 16%;
     }
 }
 
