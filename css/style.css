@@ -1,0 +1,404 @@
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    background: white;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+
+/* Mengatur tampilan navigasi */
+
+.collapse navbar-collapse {
+    background-color: #C19A6B;
+}
+
+.navbar {
+    background-color: #C19A6B;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1%;
+}
+
+.navbar-brand {
+    color: #FFF;
+}
+
+.nav-item {
+    font-style: bold;
+    display: flex;
+    float: right;
+}
+
+.nav-link {
+    color: #FFF;
+}
+
+.content2 {
+    display: hidden;
+    opacity: 0;
+}
+
+
+/* carousel */
+
+.MyCarousel {
+    /* padding-left: 5%;
+    padding-right: 5%; */
+    background-color: black;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* padding-top: 6%; */
+}
+
+.carousel-item {
+    height: 700px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.carousel-caption h3 {
+    color: #fff;
+    font-size: 30pt;
+}
+
+.carousel-caption p {
+    color: #fff;
+    font-size: 20pt;
+}
+
+@media only screen and (max-width:1000px) {
+    .MyCarousel {
+        padding-top: 10%;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .MyCarousel {
+        padding-top: 20%;
+    }
+}
+
+
+/* footer */
+
+.footer {
+    text-align: center;
+    background-color: #fff;
+    margin-top: 5%;
+    color: black;
+    position: relative;
+    bottom: 0;
+    /* box-shadow: 8px 4px 8px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.btn {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #DEB887;
+}
+
+
+/* hiding div */
+
+
+/* .hide-div1 {
+    display: none;
+}
+
+.hide-div2 {
+    display: block;
+}
+
+@media only screen and (max-width:992px) {
+    .hide-div1 {
+        display: block;
+    }
+    .hide-div2 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .hide-div1 {
+        display: none;
+    }
+    .hide-div2 {
+        display: block;
+    }
+} */
+
+
+/* carding  */
+
+.card {
+    width: 100%;
+    /* background-color: burlywood;
+    border-color: #FFF; */
+    border-radius: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card-container {
+    margin-top: 1%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.card-container-lg {
+    margin-top: 1%;
+    padding-left: 15%;
+    padding-right: 15%;
+    border: #C19A6B;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 2%;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 16pt;
+}
+
+.card .book {}
+
+[class*="col-"] {
+    width: 100%;
+    float: center;
+}
+
+
+/* detail */
+
+.detail {}
+
+.detail-list li {
+    font-size: 18pt;
+}
+
+.border-a {
+    border-style: solid;
+    border-radius: 2%;
+    border-color: #E0E0E0;
+    border-width: 2%;
+}
+
+.wrapper {
+    height: 100vh;
+}
+
+
+/* book */
+
+.book {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 3%;
+}
+
+.book-container {
+    padding-top: 4%;
+}
+
+
+/* media carousel */
+
+@media only screen and (max-width: 1100px) {
+    .MyCarousel {
+        padding-top: 7%;
+    }
+    .detail {
+        padding-top: 3%;
+    }
+    .book {
+        padding-right: 5%;
+        padding-bottom: 3%;
+    }
+    .book-container {
+        padding-top: 6%;
+    }
+    .carousel-item {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .MyCarousel {
+        padding-top: 15%;
+    }
+    .detail {
+        padding-top: 10%;
+    }
+    .detail-list {
+        tab-size: 8pt;
+    }
+    .book-container {
+        padding-top: 9%;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .MyCarousel {
+        padding-top: 17%;
+    }
+    .footer {
+        font-size: 10pt;
+    }
+}
+
+
+/*  */
+
+@media only screen and (max-width: 768px) {
+    /* For tablets: */
+    .col-sm-6 {
+        width: 50%;
+        text-align: center;
+    }
+    .col-sm-12 {
+        width: 100%;
+        text-align: center;
+    }
+    .book {
+        padding-right: 5%;
+        padding-bottom: 4%;
+    }
+    .carousel-caption h3 {
+        font-size: 12pt;
+    }
+    .carousel-caption p {
+        font-size: 8pt;
+    }
+    .carousel-caption {
+        padding-top: 15%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .card-title {
+        font-size: 10pt;
+    }
+    .col-m-3 {
+        width: 50%;
+    }
+    .MyCarousel {
+        padding-top: 10%;
+    }
+    .detail {
+        padding-top: 5%;
+    }
+    .title {
+        padding-top: 7%;
+    }
+    .border-a {
+        border-style: none;
+    }
+    .book {
+        padding-right: 4%;
+        padding-bottom: 5%;
+    }
+    .book-container {
+        padding-top: 8%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {
+        width: 8.33%;
+    }
+    .col-m-2 {
+        width: 16.66%;
+    }
+    .col-m-3 {
+        width: 25%;
+    }
+    .col-m-4 {
+        width: 33.33%;
+    }
+    .col-m-5 {
+        width: 41.66%;
+    }
+    .col-m-6 {
+        width: 50%;
+    }
+    .col-m-7 {
+        width: 58.33%;
+    }
+    .col-m-8 {
+        width: 66.66%;
+    }
+    .col-m-9 {
+        width: 75%;
+    }
+    .col-m-10 {
+        width: 83.33%;
+    }
+    .col-m-11 {
+        width: 91.66%;
+    }
+    .col-m-12 {
+        width: 100%;
+    }
+    .container {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+}

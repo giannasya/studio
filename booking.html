@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Studio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body class="col-12">
+    <!--NAVIGASI-->
+    <div class="wrapper">
+        <div class="row">
+            <nav class="col-12 navbar navbar-expand-lg navbar-light fixed-top" style="background-color: burlywood;">
+                <a class="navbar-brand" href="index.html"><b>Gigi Studio</b></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav" style="padding-right: 5%;">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produk">Produk</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Tentang Kami</a>
+                        </li>
+                        <!-- <form class="d-flex" role="search">
+                        <input class="form-control me-2 hide-div1" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-dark hide-div1" type="submit" id="search">Search</button>
+                    </form> -->
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!--BOOKING-->
+
+        <div class="col-12 card-container book-container ">
+            <div class="row ">
+                <div class="col-12 text-center ">
+                    <p>
+                        <h3><b>Booking Room</b></h3>
+                    </p>
+                </div>
+
+                <div class="col-12 card book ">
+                    <div class="row ">
+                        <div class="col-m-6 ">
+                            <div class="col-12 card-img ">
+                                <img id="room-image" src="">
+                            </div>
+                        </div>
+                        <div class="col-m-6 border-a " style="padding-top: 1%; ">
+                            <form class="col-12 ">
+                                <div class="form-group text-center ">
+                                    <label for="exampleFormControlInput1 ">Email address</label>
+                                    <input type="email" class="form-control " id="email" placeholder="name@example.com ">
+                                </div>
+                                <div class="form-group ">
+                                    <label for="exampleFormControlSelect1 ">Pilihan Room</label>
+                                    <select class="form-control " id="produk">
+                                        <option>select your room</option>
+                                        <option value="ruangA">Room A</option>
+                                        <option value="ruangB">Room B</option>
+                                        <option value="ruangC">Room C</option>
+                                        <option value="ruangD">Room D</option>
+                                        <option value="ruangE">Room E</option>
+                                        <option value="ruangF">Room F</option>
+                                        <option value="ruangG">Room G</option>
+                                        <option value="ruangH">Room H</option>
+                                    </select>
+                                </div>
+                                <div class="form-group ">
+                                    <label for="exampleFormControlSelect1 "> Jam Peminjaman </label>
+                                    <select class="form-control " id="jam">
+                                        <option>select your time</option>
+                                        <option value="13.00">13.00</option>
+                                        <option value="14.00">14.00</option>
+                                        <option value="15.00">15.00</option>
+                                        <option value="16.00">16.00</option>
+                                        <option value="17.00">17.00</option>
+                                        <option value="18.00">18.00</option>
+                                        <option value="19.00">19.00</option>
+                                    </select>
+                                </div>
+                                <div class="form-group ">
+                                    <label for="exampleFormControlSelect1 "> Durasi Peminjaman </label>
+                                    <select class="form-control " id="durasi">
+                                        <option>select your duration</option>
+                                        <option value="1">1 Jam</option>
+                                        <option value="2">2 Jam</option>
+                                        <option value="3">3 Jam</option>
+                                        <option value="4">4 Jam</option>
+                                        <option value="5">5 Jam</option>
+                                    </select>
+                                </div>
+                            </form>
+                            <div class="col-12 button book text-center " style="padding-top: 3%; ">
+                                <a href="index.html ">
+                                    <button type="button " class="btn ">Cancel</button>
+                                </a>
+                                <a href="sukses.html ">
+
+                                </a>
+                                <button type="button " class="btn" id="submit" onclick="validate()">Booking</button>
+                            </div>
+                            <!-- <div class="col-12 card content2">
+                                <div class="header2">
+
+                                    <label for="click" class="fas fa-times" onclick="closemasuk();"></label>
+                                </div>
+                                <label id="kedua" for="click" class="fas fa-times"></label>
+                                <p> input masih ada yang kosong nih, masukan dulu ya.</p>
+                                <div class="line"></div>
+                                <label for="click" class="close-btn2" onclick="closemasuk();">Close</label>
+                            </div>
+                            <div class="konten masuk">
+                                <form action="">
+                                    <h1>MASUK</h1>
+                                    <input type="email" name="email" id="myemail" placeholder="Email"><br>
+                                    <input type="password" name="password" id="mypass" placeholder="Kata sandi"><br>
+                                    <button type="submit">Masuk</button> <br>
+                                </form>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="row p-2 footer border-top ">
+            <div class="container " style="padding-top: 1%; ">
+                <p>All Right Reserved By @GigiStudio</p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="script/script.js"></script>
+
+</html>
